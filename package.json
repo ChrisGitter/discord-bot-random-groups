@@ -1,0 +1,48 @@
+{
+    "name": "discord-bot-random-groups",
+    "description": "A discord bot that randomly groups discord users together and outputs the result in text form",
+    "version": "1.0.0",
+    "main": "lib/index.js",
+    "license": "GPL-3.0",
+    "author": {
+        "name": "Christian Gitter",
+        "email": "mail@christiangitter.de",
+        "url": "https://christiangitter.de"
+    },
+    "scripts": {
+        "start": "node lib",
+        "dev": "nodemon src/index.ts",
+        "build": "rimraf lib && babel src -d lib -x .ts",
+        "test": "jest src"
+    },
+    "dependencies": {
+        "discord.js": "^12.5.1",
+        "dotenv": "^8.2.0",
+        "nconf": "^0.11.2",
+        "yargs-parser": "^20.2.6"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.13.10",
+        "@babel/core": "^7.13.10",
+        "@babel/node": "^7.13.10",
+        "@babel/preset-env": "^7.13.10",
+        "@babel/preset-typescript": "^7.13.0",
+        "@types/jest": "^26.0.20",
+        "@types/nconf": "^0.10.0",
+        "@types/node": "^14.14.33",
+        "@typescript-eslint/eslint-plugin": "^4.17.0",
+        "@typescript-eslint/parser": "^4.17.0",
+        "eslint": "7.12.1",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-node": "11.1.0",
+        "eslint-plugin-prettier": "^3.3.1",
+        "eslint-plugin-promise": "4.2.1",
+        "jest": "^26.6.3",
+        "nodemon": "^2.0.7",
+        "prettier": "^2.2.1",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.2.3"
+    }
+}

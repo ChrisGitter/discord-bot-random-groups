@@ -1,0 +1,6 @@
+{
+    "ignore": ["*.test.ts"],
+    "execMap": {
+        "ts": "babel-node --inspect -x .ts"
+    }
+}
